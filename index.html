@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="데이터 사이언티스트 포트폴리오 - 머신러닝, 데이터 분석, 통계">
+    <title>데이터 사이언티스트 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Scientist</span>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">홈</a></li>
+                    <li><a href="#about" class="nav-link">소개</a></li>
+                    <li><a href="#projects" class="nav-link">프로젝트</a></li>
+                    <li><a href="#skills" class="nav-link">기술</a></li>
+                    <li><a href="#contact" class="nav-link">연락처</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">안녕하세요!</h1>
+                <p class="hero-subtitle">저는 데이터 사이언티스트입니다</p>
+                <p class="hero-description">
+                    머신러닝과 데이터 분석을 통해 복잡한 문제를 해결하고 
+                    의미 있는 인사이트를 도출합니다.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">포트폴리오 보기</a>
+                    <a href="#contact" class="btn btn-secondary">연락 주기</a>
+                </div>
+                <div class="social-links hero-social">
+                    <a href="#" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">소개</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        저는 5년 이상의 데이터 사이언스 경험을 보유한 전문가입니다.
+                        Python, R, SQL을 능숙하게 다루며, 머신러닝 모델 개발과 
+                        데이터 시각화에 특화되어 있습니다.
+                    </p>
+                    <p>
+                        대규모 데이터셋 분석, 예측 모델링, 통계 분석 등 다양한 프로젝트를 
+                        성공적으로 완료했으며, 팀과의 협업 및 소통을 중요하게 생각합니다.
+                    </p>
+                    <p>
+                        새로운 기술 학습과 문제 해결에 항상 열정적이며, 
+                        데이터 기반 의사결정을 통해 비즈니스 가치를 창출하는 것이 목표입니다.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>완료한 프로젝트</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>분석한 데이터셋</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>경력 (년)</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>팀 프로젝트</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">모두</button>
+                <button class="filter-btn" data-filter="ml">머신러닝</button>
+                <button class="filter-btn" data-filter="analysis">데이터 분석</button>
+                <button class="filter-btn" data-filter="visualization">시각화</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">고객 이탈 예측 모델</h3>
+                        <p class="project-description">
+                            고객 행동 데이터를 분석하여 이탈 가능성이 높은 고객을 예측하는 
+                            머신러닝 모델 개발
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">Classification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="analysis">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">전자상거래 매출 분석</h3>
+                        <p class="project-description">
+                            매달 500만 이상의 거래 데이터 분석으로 매출 증대 전략 도출 및 
+                            트렌드 파악
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">EDA</span>
+                            <span class="tag">Business Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">자연어 처리 감정 분석</h3>
+                        <p class="project-description">
+                            소셜 미디어 텍스트 데이터에서 감정을 자동으로 분류하는 
+                            NLP 모델 구축
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">LSTM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="visualization">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">대시보드 개발</h3>
+                        <p class="project-description">
+                            실시간 비즈니스 메트릭을 모니터링하는 인터랙티브 
+                            데이터 대시보드 개발
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="analysis">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">시계열 데이터 예측</h3>
+                        <p class="project-description">
+                            ARIMA, Prophet 등을 활용한 시계열 데이터 예측 모델 및 
+                            트렌드 분석
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Time Series</span>
+                            <span class="tag">ARIMA</span>
+                            <span class="tag">Prophet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">이미지 분류 AI 모델</h3>
+                        <p class="project-description">
+                            CNN 기반의 이미지 분류 모델로 제품 불량 자동 검출 시스템 구축
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">CNN</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">프로그래밍 언어</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">데이터 사이언스 도구</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas & NumPy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow & Keras</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualization & BI -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">시각화 & BI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib & Seaborn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Plotly</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">데이터베이스 & 도구</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter & Colab</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">연락처</h2>
+            <p class="section-subtitle">의견이나 제안이 있으신가요? 언제든지 연락주세요!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>이메일</h3>
+                        <p><a href="mailto:example@email.com">example@email.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>전화</h3>
+                        <p><a href="tel:+82-10-1234-5678">+82-10-1234-5678</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>위치</h3>
+                        <p>서울, 대한민국</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="이름" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="이메일" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="제목" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="메시지" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">보내기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 데이터 사이언티스트 포트폴리오. 모든 권리 보유.</p>
+                <div class="social-links footer-social">
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
